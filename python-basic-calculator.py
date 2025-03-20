@@ -24,3 +24,11 @@ def calculator():
 
     except ValueError:
         print("Invalid input. Please enter numbers only.")
+
+# Loop to allow multiple calculations
+while True:
+    calculator()
+    cont = input("Do you want to perform another calculation? (yes/no): ").strip().lower()
+    if cont != 'yes':
+        print("Goodbye! 👋")
+        break  # Exit the loop if the user doesn't type 'yes'
